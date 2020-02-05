@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+        <TextView
+            android:id="@+id/tvNopendaftaran"
+            android:text="No. Pendaftaran"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="HardcodedText" />
+
+        <EditText
+            android:id="@+id/etNoPendaftaran"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            tools:ignore="Autofill,LabelFor,TextFields" />
+
+        <TextView
+            android:id="@+id/tvNama"
+            android:text="Nama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="HardcodedText" />
+
+        <EditText
+            android:id="@+id/etNama"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            tools:ignore="Autofill,LabelFor,TextFields" />
+
+        <TextView
+            android:id="@+id/tvJk"
+            android:text="Jenis Kelamin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="HardcodedText" />
+    
+        <RadioGroup
+            android:id="@+id/rgJenisKelamin"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+            <RadioButton
+                android:id="@+id/rbLaki-laki"
+                android:text="Laki-Laki"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignore="HardcodedText" />
+            <RadioButton
+                android:id="@+id/rbPerempuan"
+                android:text="Perempuan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignore="HardcodedText" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvAgama"
+            android:text="Agama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="HardcodedText" />
+
+        <Spinner
+            android:id="@+id/sAgama"
+            android:entries="@array/agama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></Spinner>
+        </LinearLayout>
+
+        <TextView
+            android:text="Alamat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="HardcodedText" />
+
+        <EditText
+            android:id="@+id/etAlamat"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            tools:ignore="Autofill,LabelFor,TextFields" />
+
+    <TextView
+        android:id="@+id/tvTelp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Telepon"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/etTelp"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        tools:ignore="Autofill,LabelFor,TextFields" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btClear"
+            android:text="Clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="ButtonStyle,HardcodedText" />
+        <Button
+            android:id="@+id/btSubmit"
+            android:text="Submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="ButtonStyle,HardcodedText" />
+    </LinearLayout>
+
+
+</LinearLayout>
